@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .title {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    z-index: 5;
+    color: transparent;
+    background-position: 0 0;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: animated-text 20s linear infinite;
+  }
+  
+  @keyframes animated-text {
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Green stroke and animated green background */
+  .one,
+  .five {
+    -webkit-text-stroke: 1px rgba(16, 104, 31, 0.8);
+    background-image: url('https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e9d06cb6-2844-49ed-9bde-23d3364b9fa4');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+  }
+  
+  /* White stroke and different animated background */
+  .two,
+  .three,
+  .four,
+  .six {
+    -webkit-text-stroke: 1px #fff;
+    background-image: url('https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ba4edde6-822d-437a-88c2-f54392d7a56f');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+  }
+  
