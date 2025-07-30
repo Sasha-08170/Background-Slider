@@ -16,15 +16,6 @@
 - **Bavaria**
 - **Copenhagen**
 
-**CSS стиль для текста:**
-.seven {
-  -webkit-text-stroke: 1px rgba(0, 150, 255, 0.9);
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Flag_of_Kyiv.svg/1280px-Flag_of_Kyiv.svg.png);
-  background-size: cover;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-}
-
 ## 📁 Файлы проекта
 
 * `index.html` — основная структура
